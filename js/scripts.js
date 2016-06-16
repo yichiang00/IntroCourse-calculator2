@@ -27,7 +27,7 @@ $(document).ready(function() {
       $("#numberText1").removeClass("has-success").addClass("has-error");
       $("#numberText2").removeClass("has-success").addClass("has-error");
       $("#output").html("<h1 id=\"scold\">Please use a number!</h1>");
-    }
+    }else{
     if (choice === "add") {
       result = add(number1, number2);
     } else if (choice === "subtract") {
@@ -38,7 +38,8 @@ $(document).ready(function() {
       result = divide(number1, number2);
     }
 
-    // $("#output").text(result);
+    $("#output").text(result);
+    }
     // alert(subtract(number1, number2));
     // alert(multiply(number1, number2));
     // alert(divide(number1,number2));
