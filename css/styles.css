@@ -1,0 +1,11 @@
+#scold {
+  font-size: 80px;
+  color: crimson;
+}
+.has-error .form-control{
+  border-width: 5px !important;
+}
+body{
+  font-size: 20px;
+  font-family: monospace;
+}

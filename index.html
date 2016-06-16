@@ -12,18 +12,40 @@
     <div class="container">
         <h1>Calculator</h1>
         <form id="add">
-          <div class="form-group">
+          <div class="form-group has-success" id="numberText1">
             <label for="add1">1st number:</label>
-            <input id="add1" class="form-control" type="text">
+            <input id="add1" class="form-control" type="text" placeholder="Give me a number one">
           </div>
-          <div class="form-group">
+          <div class="form-group has-success" id="numberText2">
             <label for="add2">2nd number:</label>
-            <input id="add2" class="form-control" type="text">
+            <input id="add2" class="form-control" type="text" placeholder="Give me a number Two">
           </div>
-          <button type="submit" class="btn">Add!</button>
+          <div class="oper">
+          <div class="radio">
+            <label>
+              <input type="radio" name="operator" value="add" > +ADD
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="operator" value="subtract" > - Minius
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="operator" value="multiply" > X Times
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="operator" value="divide" > / Divide
+            </label>
+          </div>
+        </div>
+          <button type="submit" class="btn">Sumbit</button>
         </form>
         <div id="output">
-          
+
         </div>
     </div>
 
