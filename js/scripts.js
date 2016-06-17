@@ -21,8 +21,7 @@ $(document).ready(function() {
     var number1 = parseFloat($("#add1").val());
     var number2 = parseFloat($("#add2").val());
     var result;
-
-    if (!number1 || !number2) {
+    if (isNaN(number1) || isNaN(number2)) {
 
       $("#numberText1").removeClass("has-success").addClass("has-error");
       $("#numberText2").removeClass("has-success").addClass("has-error");
@@ -32,12 +31,11 @@ $(document).ready(function() {
       result = add(number1, number2);
     } else if (choice === "subtract") {
       result = subtract(number1, number2);
-    }else if (choice === "multiply") {
+    } else if (choice === "multiply") {
       result = multiply(number1, number2);
-    }else{
+    } else {
       result = divide(number1, number2);
     }
-
     $("#output").text(result);
     }
   });
