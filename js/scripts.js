@@ -40,8 +40,8 @@ $(document).ready(function() {
 
     $("#output").text(result);
     }
-    // alert(subtract(number1, number2));
-    // alert(multiply(number1, number2));
-    // alert(divide(number1,number2));
+  });
+  $("#reset").click(function() {
+    location.reload();
   });
 });

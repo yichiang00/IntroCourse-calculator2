@@ -41,6 +41,7 @@ button.btn{
   height: 100px;
   text-align: center;
   font-size: 50px;
+  margin-top: 10px;
 }
 
 #add1, #add2 {
